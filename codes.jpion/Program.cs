@@ -1,9 +1,13 @@
-var builder = WebApplication.CreateBuilder(args);
+using codes.jpion.Services;
+
+var bob = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+bob.Services.AddSingleton<WhereAmIService>();
 
-var app = builder.Build();
+bob.Services.AddRazorPages();
+
+var app = bob.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
