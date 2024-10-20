@@ -1,0 +1,72 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Joshua Pion - the \"You\" developer - You dream it, I build it!";
+
+    var classes = new Dictionary<string, string>
+    {
+        { "card", "col card card-home px-0 shadow border-0 rounded-4" },
+        { "cardImg", "card-img-top rounded-top-4" },
+        { "cardHead", "card-title text-center text-uppercase" },
+        { "cardBody", "card-body" },
+        { "cardFoot", "card-footer text-muted text-end" }
+    };
+}
+
+<div class="hero hero-home">
+</div>
+<div class="hero-overlay d-flex">
+    <div class="m-auto hero-back">
+        <div class="hero-back-underlay"></div>
+        <div class="hero-back-overlay text-center d-flex">
+            <div class="m-auto">
+                <img src="~/media/images/jp.jpg" class="img-fluid rounded-circle home-img" />
+                <h1 class="mt-2">Joshua Pion</h1>
+                <a href="/about#:~:text=Whether%20I%E2%80%99m%20working,I%20build%20it" class="fs-4 link-you-dev">The "you" developer...</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row card-group gap-4 mt-3">
+    <a asp-area="" asp-page="/About" class="@classes["card"]">
+        <img class="@classes["cardImg"]" src="~/media/images/Question__by_Emily_Morter.jpg" />
+        <h4 class="@classes["cardHead"]">About</h4>
+        <div class="@classes["cardBody"]">
+            From programming games to solving real-world problems with code. Click here to learn more about how I became the developer I am today!
+        </div>
+        <div class="@classes["cardFoot"]">
+            <small>Image credit Upsplash.com - Emily Morter</small>
+        </div>
+    </a>
+    <div class="@classes["card"]">
+        <img class="@classes["cardImg"]" src="~/media/images/Skills__by_geralt.jpg" />
+        <h4 class="@classes["cardHead"]">Skills</h4>
+        <div class="@classes["cardBody"]">
+            From C/C++ to modern web and app development I've been writing code for over a decade now. Click here to learn more about my background as a programmer and how working with the public made me a better developer.
+        </div>
+        <div class="@classes["cardFoot"]">
+            <small>Image credit Pixabay.com - Geralt</small>
+        </div>
+    </div>
+    <div class="@classes["card"]">
+        <img class="@classes["cardImg"]" src="~/media/images/coding__by_luca_bravo.jpg" />
+        <h4 class="@classes["cardHead"]">Projects</h4>
+        <div class="@classes["cardBody"]">
+            View hands-on examples of my work. Click here to view a collection of live projects and code repositories showcasing my expansive knowlege of my craft.
+        </div>
+        <div class="@classes["cardFoot"]">
+            <small>Image credit Upsplash.com - Luca Bravo</small>
+        </div>
+    </div>
+    <div class="@classes["card"]">
+        <img class="@classes["cardImg"]" src="~/media/images/typingOnComputer__by_glenn_carstens-peters.jpg" />
+        <h4 class="@classes["cardHead"]">Blog</h4>
+        <div class="@classes["cardBody"]">
+            Project post-mortems, thoughts on the industry, and more! Click here to explore my blog.
+        </div>
+        <div class="@classes["cardFoot"]">
+            <small>Image credit Upsplash.com - Glenn Carstens-Peters</small>
+        </div>
+    </div>
+</div>

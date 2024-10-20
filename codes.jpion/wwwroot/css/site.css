@@ -1,0 +1,181 @@
+html {
+  font-size: 14px;
+  min-height: 100vh;
+}
+
+body {
+    min-height: calc(min(100vh - 65px));
+    padding-bottom: 65px;
+}
+
+article {
+    max-width: 74ch;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.geostar-fill-regular {
+    font-family: "Geostar Fill", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*.container-main {
+    background-color: #2B2D42;
+}*/
+
+.hero-home {
+    background-image: url("../media/images/codeSplash.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 65px);
+    filter: blur(6px);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    height: calc(100vh - 65px);
+}
+
+.home-img {
+    max-width:20vh;
+}
+
+@media (min-width: 768px) {
+    .home-img {
+        max-width: 30vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home-img {
+        max-width: 35vh;
+    }
+}
+
+@media (min-width: 1440px) {
+    .home-img {
+        max-width: 40vh;
+    }
+}
+
+.hero-back {
+    width:70%;
+    height: 50vh;
+    position: absolute;
+    top: calc(30vh - 65px);
+    left: 15%;
+  
+}
+
+.hero-back-underlay {
+    background-color: #433544;
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+
+.hero-back-overlay {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color:antiquewhite;
+    border: 8px groove #9C92A3;
+    top: -50vh;
+    padding: 1.3rem;
+    left: 0;
+ 
+}
+
+.text-white {
+    color: antiquewhite!important;
+}
+
+.text-light.text-muted {
+    color: gray!important;
+}
+
+a.link-you-dev{
+    color:antiquewhite;
+}
+
+a.link-you-dev:active {
+    color:antiquewhite;
+}
+
+.card-home {
+    background-color: gainsboro;
+    text-decoration: none;
+    transition: transform .4s;
+    z-index: 0;
+}
+
+.card-home:hover {
+    transform: scale(1.1);
+    z-index:100;
+}
+
+.navbar {
+    z-index: 9001;
+}
+
+.contact-box {
+    background-color: black;
+    color: antiquewhite;
+    width: 120px;
+    height: 50px;
+    padding-left: 6px;
+    padding-right: 6px;
+    position: fixed;
+    z-index: 9000;
+    border-radius: 6px;
+    top: calc(100vh - 55px);
+    left: calc(100vw - 140px);
+}
+
+@media (max-width: 940px) {
+    .card-home {
+        min-width: 35% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-home {
+        min-width: 100% !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .contact-box {
+        z-index: 9001;
+        top: 5px;
+    }
+}
