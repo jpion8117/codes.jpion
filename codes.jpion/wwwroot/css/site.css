@@ -57,7 +57,7 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100vh - 65px);
+    height: calc(100dvh - 65px);
     filter: blur(6px);
 }
 
@@ -67,36 +67,36 @@ html {
     left: 0px;
     z-index: 1;
     width: 100%;
-    height: calc(100vh - 65px);
+    height: calc(100dvh - 65px);
 }
 
 .home-img {
-    max-width:20vh;
+    max-width:20dvh;
 }
 
 @media (min-width: 768px) {
     .home-img {
-        max-width: 30vh;
+        max-width: 30dvh;
     }
 }
 
 @media (min-width: 1024px) {
     .home-img {
-        max-width: 35vh;
+        max-width: 35dvh;
     }
 }
 
 @media (min-width: 1440px) {
     .home-img {
-        max-width: 40vh;
+        max-width: 40dvh;
     }
 }
 
 .hero-back {
     width:70%;
-    height: 50vh;
+    height: 50dvh;
     position: absolute;
-    top: calc(30vh - 65px);
+    top: calc(30dvh - 65px);
     left: 15%;
   
 }
@@ -118,7 +118,7 @@ html {
     position: relative;
     color:antiquewhite;
     border: 8px groove #9C92A3;
-    top: -50vh;
+    top: -50dvh;
     padding: 1.3rem;
     left: 0;
  
@@ -166,7 +166,7 @@ a.link-you-dev:active {
     position: fixed;
     z-index: 9000;
     border-radius: 6px;
-    top: calc(100vh - 55px);
+    top: calc(100dvh - 55px);
     left: calc(100vw - 140px);
 }
 
