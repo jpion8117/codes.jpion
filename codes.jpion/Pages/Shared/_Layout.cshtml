@@ -3,7 +3,8 @@
     var activeLinks = new Dictionary<string, bool>
     {
         { "home", current.Value == "/" },
-        { "about", current.Value?.ToLower().Contains("about") ?? false }
+        { "about", current.Value?.ToLower().Contains("about") ?? false },
+        { "skills", current.Value?.ToLower().Contains("skills") ?? false }
     };
 }
 
@@ -37,6 +38,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-white @(activeLinks["about"] ? "active" : "")" asp-area="" asp-page="/About">About</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white @(activeLinks["skills"] ? "active" : "")" asp-area="" asp-page="/Skills/Index">Skills</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -45,8 +49,8 @@
             <div class="text-center"><small>Contact Me</small></div>
             <div class="row row-cols-3">
                 <div class="col"><i class="fa-sharp-duotone fa-solid fa-pen-field fa-sm" style="--fa-primary-color: #faebd7; --fa-secondary-color: #ffd7a3;"></i></div>
-                <div class="col"><i class="fa-sharp fa-solid fa-at fa-sm"></i></div>
-                <div class="col"><i class="fa-brands fa-linkedin" style="color: #faebd7;"></i></div>
+                <a href="mailto:contact@jpion.codes" class="col text-white"><i class="fa-sharp fa-solid fa-at fa-sm"></i></a>
+                <a href="https://www.linkedin.com/in/joshua-pion" class="col"><i class="fa-brands fa-linkedin" style="color: #faebd7;"></i></a>
             </div>
         </div>
     </header>
@@ -58,7 +62,7 @@
 
     <footer class="border-top footer text-light text-muted bg-black">
         <div class="container">
-            &copy; 2024 - codes.jpion - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2024 - Joshua Pion - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
 

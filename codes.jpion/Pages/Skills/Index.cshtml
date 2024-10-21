@@ -1,0 +1,40 @@
+﻿@page
+@model codes.jpion.Pages.Skils.IndexModel
+@{
+    ViewData["Title"] = "Skills - Choose Your Adventure";
+
+    var classes = new Dictionary<string, string>
+    {
+        { "card", "col card card-home px-0 shadow border-0 rounded-4" },
+        { "cardImg", "card-img-top rounded-top-4" },
+        { "cardHead", "card-title text-center text-uppercase" },
+        { "cardBody", "card-body" },
+        { "cardFoot", "card-footer text-muted text-end" }
+    };
+}
+<article>
+    <h1 class="text-center">Choose Your Adventure!</h1>
+    <div class="row card-group gap-4 mt-3">
+        <a asp-area="" asp-page="/Skills/ForClients" class="@classes["card"]">
+            <img class="@classes["cardImg"]" style="max-height:200px" src="~/media/images/teamwork__by_krakenimages.jpg" />
+            <h4 class="@classes["cardHead"]">Non-Technical</h4>
+            <div class="@classes["cardBody"]">
+                Not a developer? Looking for a someone to build a project for you? Not sure what the correct industry terminology is? No problem! It’s all part of being the “you” developer! Click here and I’ll skip the technical jargon and explain my skills in a way that anyone can understand. We’ll work together to see if I’m the right person for your job!
+            </div>
+            <div class="@classes["cardFoot"]">
+                <small>Image credit Upsplash.com - Krakenimages</small>
+            </div>
+        </a>
+        <a asp-area="" asp-page="/Skills/ForRecruiters" class="@classes["card"]">
+            <img class="@classes["cardImg"]" style="max-height:200px" src="~/media/images/techPro__by_desola-lanre-ologun.jpg" />
+            <h4 class="@classes["cardHead"]">Technical</h4>
+            <div class="@classes["cardBody"]">
+                Let’s talk shop! You know your programming languages, you understand the difference between Java and JavaScript. Click here and I’ll tell you what programming languages, frameworks, and concepts I’m most familiar with. We’ll get into all the nerdy details!
+            </div>
+            <div class="@classes["cardFoot"]">
+                <small>Image credit Upsplash.com - Desola Lanre-Ologun</small>
+            </div>
+        </a>
+    </div>
+
+</article>
