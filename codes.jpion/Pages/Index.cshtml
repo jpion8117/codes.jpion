@@ -1,5 +1,7 @@
 ﻿@page
 @model IndexModel
+@using codes.jpion.Services
+@inject WhereAmIService _wais
 @{
     ViewData["Title"] = "Joshua Pion - the \"You\" developer - You dream it, I build it!";
 
@@ -22,7 +24,7 @@
             <div class="m-auto">
                 <img src="~/media/images/jp.jpg" class="img-fluid rounded-circle home-img" />
                 <h1 class="mt-2">Joshua Pion</h1>
-                <a href="/about#:~:text=Whether%20I%E2%80%99m%20working,I%20build%20it" class="fs-4 link-you-dev">The "you" developer...</a>
+                <a href="@_wais.GetUrl("/about#:~:text=Whether%20I%E2%80%99m%20working,I%20build%20it")" class="fs-4 link-you-dev">The "you" developer...</a>
             </div>
         </div>
     </div>
