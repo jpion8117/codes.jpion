@@ -15,7 +15,7 @@
     };
 }
 
-<div class="hero hero-home">
+<div class="hero hero-home d-flex">
 </div>
 <div class="hero-overlay d-flex">
     <div class="m-auto hero-back">
@@ -24,13 +24,17 @@
             <div class="m-auto">
                 <img src="~/media/images/jp.jpg" class="img-fluid rounded-circle home-img" />
                 <h1 class="mt-2">Joshua Pion</h1>
-                <a href="@_wais.GetUrl("/about#:~:text=Whether%20I%E2%80%99m%20working,I%20build%20it")" class="fs-4 link-you-dev">The "you" developer...</a>
+                <a href="@_wais.GetUrl("/about#:~:text=Whether%20I%E2%80%99m%20working,I%20build%20it")" class="fs-4 link-you-dev text-decoration-none border border-1 py-1 px-2">The "you" developer...</a>
             </div>
         </div>
     </div>
 </div>
+<a href="#cards" id="skipToCardsBtn" class="text-decoration-none text-light text-center fa-beat-fade">
+    <div>Learn More</div>
+    <div><i class="fa-solid fa-chevrons-down"></i></div>
+</a>
 
-<div class="row card-group gap-4 mt-3">
+<div id="cards" class="row card-group gap-4 mt-3">
     <a asp-area="" asp-page="/About" class="@classes["card"]">
         <img class="@classes["cardImg"]" src="~/media/images/Question__by_Emily_Morter.jpg" />
         <h4 class="@classes["cardHead"]">About</h4>

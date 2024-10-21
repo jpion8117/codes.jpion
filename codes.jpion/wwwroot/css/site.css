@@ -39,6 +39,15 @@ html {
     background-color: #2B2D42;
 }*/
 
+#skipToCardsBtn {
+    height: 35px;
+    width: 100px;
+    position:absolute;
+    top: calc(100dvh - 80px);
+    z-index: 100;
+    left: calc(50vw - 50px);
+}
+
 .hero-home {
     background-image: url("../media/images/codeSplash.png");
     background-attachment: fixed;
