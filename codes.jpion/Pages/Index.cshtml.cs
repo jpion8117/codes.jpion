@@ -16,5 +16,10 @@ namespace codes.jpion.Pages
         {
 
         }
+
+        public IActionResult OnPostContact()
+        {
+            return Page();
+        }
     }
 }
